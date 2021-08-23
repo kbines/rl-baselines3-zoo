@@ -1,0 +1,1 @@
+ python train.py --algo a2c --env PortfolioAllocation-v0  --eval-freq 100 --save-freq 500 --n-timesteps 1000 --optimization-log-path --env-kwargs filename:"'yahoo_daily_sp500_prices.csv'", date_from:"'2008-01-01'", date_to:"'2017-12-31'", sample_size:100, reward_function:"'psr'"

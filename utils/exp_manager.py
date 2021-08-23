@@ -333,7 +333,9 @@ class ExperimentManager(object):
         # Delete keys so the dict can be pass to the model constructor
         if "n_envs" in hyperparams.keys():
             del hyperparams["n_envs"]
-        del hyperparams["n_timesteps"]
+            
+        if "n_timesteps" in hyperparams.keys():
+            del hyperparams["n_timesteps"]
 
         if "frame_stack" in hyperparams.keys():
             self.frame_stack = hyperparams["frame_stack"]

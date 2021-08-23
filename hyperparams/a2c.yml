@@ -1,3 +1,7 @@
+PortfolioAllocation-v0:
+  policy : 'MlpPolicy'
+
+
 atari:
   env_wrapper:
     - stable_baselines3.common.atari_wrappers.AtariWrapper

@@ -67,7 +67,6 @@ def get_wrapper_class(hyperparams: Dict[str, Any]) -> Optional[Callable[[gym.Env
 
     if "env_wrapper" in hyperparams.keys():
         wrapper_name = hyperparams.get("env_wrapper")
-
         if wrapper_name is None:
             return None
 
@@ -92,6 +91,7 @@ def get_wrapper_class(hyperparams: Dict[str, Any]) -> Optional[Callable[[gym.Env
                 kwargs = wrapper_dict[wrapper_name]
             else:
                 kwargs = {}
+
             wrapper_module = importlib.import_module(get_module_name(wrapper_name))
             wrapper_class = getattr(wrapper_module, get_class_name(wrapper_name))
             wrapper_classes.append(wrapper_class)

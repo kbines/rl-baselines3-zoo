@@ -13,3 +13,10 @@ rl-trained_agents/
 htmlcov/
 git_rewrite_commit_history.sh
 .vscode/
+/*.csv
+/ac2_50_500_returns
+/ac2_50_pv_normalized
+/ac2_50_sharpe_normalized
+/ac2_50_sharpe_normalized_colab
+/ac2_100_returns_normalized_random_cash
+/ac2_returns_colab

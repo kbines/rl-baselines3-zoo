@@ -1,0 +1,12 @@
+python train.py^
+ --algo a2c --env PortfolioAllocation-v0^
+ --n-timesteps 20^
+ --optimization-log-path ac2_50_500_returns/opt_log^
+ --log-folder ac2_50_500_returns/log^
+ --save-freq 50^
+ --vec-env dummy^
+ --n-trials 50^
+ --optimize-hyperparameters^
+ --study-name ac2_50_500_returns^
+ --verbose 1^
+ --env-kwargs sample_size:500
